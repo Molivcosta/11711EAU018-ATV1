@@ -19,6 +19,8 @@ $(PROG).elf: $(OBJS)
 	$(CC) -c $(CFLAGS) $< -o $@
 
 clean:
-	rm -f $(OBJS) $(PROG).elf $(PROG).bin $(PROG).map
+	rm -f $(OBJS) $(PROG).elf 
+	rm -f $(PROG).bin 
+	rm -f $(PROG).map
 	
 
