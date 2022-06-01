@@ -1,12 +1,12 @@
 ## Atividade 01
 
-# Laboratório 02
+## Laboratório 02
 
 Neste laboratório utilizamos a ferramenta GNU Arm Embedded Toolchain visando a compilação de códigos para a linha de microcontoladores da ST, mais expecificamente da linha STM32F411.
 
 Aprendemos automatizar a compilação de scripts, utilizando a ferramenta Makefile e programar toda a parte de inicialização do chip STM32F411 em linguagem C, gravar o stack pointer no inicio da memória flash e demais configurações na região da memória RAM.
 
-# Laboratório 03
+## Laboratório 03
 
 Neste laboratótio temos o propósito de implementar um código para piscar o LED integrado ao kit de desenvolvimento STM32F411, porém, continuaremos desenvolvendo o código feito no laboratório_02.
 
