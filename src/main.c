@@ -71,11 +71,10 @@
 int main(int argc, char *argv[])
 {
     uint32_t reg;
-    uint32_t LED_DELAY;
+    static uint32_t LED_DELAY = 5;
 
     /* Ponteiros para registradores */
 
-    uint32_t *pRCC_AHB1ENR  = (uint32_t *)STM32_RCC_AHB1ENR;
     uint32_t *pGPIOC_MODER  = (uint32_t *)STM32_GPIOC_MODER;
     uint32_t *pGPIOC_OTYPER = (uint32_t *)STM32_GPIOC_OTYPER;
     uint32_t *pGPIOC_PUPDR  = (uint32_t *)STM32_GPIOC_PUPDR;
