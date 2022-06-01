@@ -72,8 +72,6 @@ int main(int argc, char *argv[])
 {
     uint32_t reg;
     uint32_t LED_DELAY;
-    static const char fw_version[] = {'V', '1', '.', '0'};
-    static uint32_t led_status;
 
     /* Ponteiros para registradores */
 
@@ -103,10 +101,8 @@ int main(int argc, char *argv[])
     while(1)
     {
         *pGPIOC_BSRR = GPIO_BSRR_SET(13);
-        led_status = 0;
          for(uint32_t i = 0; i < LED_DELAY; i++);
         *pGPIOC_BSRR = GPIO_BSRR_RST(13);
-        led_status = 1;
          for(uint32_t i = 0; i < LED_DELAY; i++);
     }
 
