@@ -1,9 +1,9 @@
-PROG = blinky
+PROG = blinky 
 
 CC = arm-none-eabi-gcc
 LD = arm-none-eabi-gcc
 CP = arm-none-eabi-objcopy
-CFLAGS = -g -mcpu=cortex-m4 -mthumb -o0   		
+CFLAGS = -g -mcpu=cortex-m4 -mthumb -o0 -Wall  		
 LFLAGS = -nostdlib -T stm32f401-rom.ld -Wl,-Map=blinky.map
 
 OBJS = startup.o \
@@ -19,5 +19,6 @@ $(PROG).elf: $(OBJS)
 	$(CC) -c $(CFLAGS) $< -o $@
 
 clean:
-	rm -f $(OBJS) $(PROG).elf $(PROG).map
+	rm -f $(OBJS) $(PROG).elf $(PROG).bin $(PROG).map
+	
 
