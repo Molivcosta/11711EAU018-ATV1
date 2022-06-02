@@ -8,7 +8,7 @@ Aprendemos automatizar a compilação de scripts, utilizando a ferramenta Makefi
 
 ### Laboratório 03
 
-Neste laboratótio temos o propósito de implementar um código para piscar o LED integrado ao kit de desenvolvimento STM32F411, porém, continuaremos desenvolvendo o código feito no laboratório_02.
+Neste laboratótio temos o propósito de implementar um código para piscar o LED integrado ao kit de desenvolvimento STM32F411, porém, continuaremos desenvolvendo o código feito no laboratório 02.
 
 Determinanmos o pino, cujo o LED está conectado. Como vamos utilizar a porta C, é necessário habilitar o clock desta porta. Isto é feito através do periférico Reset tiand Clock Control (RCC), foi visto que na STM32F401 e 411 o pino de ativação de clock possuí um offset de 0X30 com endereço 0x4002 3800.
 
@@ -16,4 +16,6 @@ Configuramos o pino PC13 como saída em push-pull com os resistores de pull-up e
 
 Analisamos as seções do arquivo objeto sendo: .text, .data, .bss, .comment e .ARM.attributes. 
 
-Escrevemos o arquivo linker, que é o responsável por combinar os arquivos objeto em um único arquivo executável para ser utilizado em nosso kit de desenvolvimento STM32F401.
+Escrevemos o arquivo linker, que é o responsável por combinar os arquivos objeto em um único arquivo executável para ser utilizado em nosso kit de desenvolvimento STM32F411.
+
+Ressalto que adaptei os códigos para utiiza-lós no kit de desenvolvimento STM32F401. 
